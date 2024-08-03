@@ -22,7 +22,7 @@ const availableCategories = [
   Category(
     id: 'c4',
     title: 'German',
-    color: Colors.amber,
+    color: Colors.yellowAccent,
   ),
   Category(
     id: 'c5',
@@ -37,12 +37,12 @@ const availableCategories = [
   Category(
     id: 'c7',
     title: 'Breakfast',
-    color: Colors.lightBlue,
+    color: Colors.tealAccent,
   ),
   Category(
     id: 'c8',
     title: 'Asian',
-    color: Colors.lightGreen,
+    color: Colors.indigoAccent,
   ),
   Category(
     id: 'c9',
@@ -52,7 +52,7 @@ const availableCategories = [
   Category(
     id: 'c10',
     title: 'Summer',
-    color: Colors.teal,
+    color: Colors.blueGrey,
   ),
 ];
 
