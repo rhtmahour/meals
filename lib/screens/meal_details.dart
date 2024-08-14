@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
 import 'package:meals/models/meal.dart';
 import 'package:meals/providers/favorites_provider.dart';
 
@@ -54,6 +53,7 @@ class MealDetailsScreen extends ConsumerWidget {
                 Text(
                   ingredient,
                   style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                        // ignore: deprecated_member_use
                         color: Theme.of(context).colorScheme.onBackground,
                       ),
                 ),
@@ -76,6 +76,7 @@ class MealDetailsScreen extends ConsumerWidget {
                     step,
                     textAlign: TextAlign.center,
                     style: Theme.of(context).textTheme.bodyMedium!.copyWith(
+                          // ignore: deprecated_member_use
                           color: Theme.of(context).colorScheme.onBackground,
                         ),
                   ),

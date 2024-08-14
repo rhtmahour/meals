@@ -9,7 +9,6 @@ class MealsScreen extends StatelessWidget {
     this.title,
     required this.meals,
   });
-
   final String? title;
   final List<Meal> meals;
 

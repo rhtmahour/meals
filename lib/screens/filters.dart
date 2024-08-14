@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-// import 'package:meals/screens/tabs.dart';
-// import 'package:meals/widgets/main_drawer.dart';
 import 'package:meals/providers/filters_provider.dart';
 
 class FiltersScreen extends ConsumerStatefulWidget {
@@ -48,6 +45,7 @@ class _FiltersScreenState extends ConsumerState<FiltersScreen> {
       //     }
       //   },
       // ),
+      // ignore: deprecated_member_use
       body: WillPopScope(
         onWillPop: () async {
           ref.read(filtersProvider.notifier).setFilters({
@@ -71,12 +69,14 @@ class _FiltersScreenState extends ConsumerState<FiltersScreen> {
               title: Text(
                 'Gluten-free',
                 style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                      // ignore: deprecated_member_use
                       color: Theme.of(context).colorScheme.onBackground,
                     ),
               ),
               subtitle: Text(
                 'Only include gluten-free meals.',
                 style: Theme.of(context).textTheme.labelMedium!.copyWith(
+                      // ignore: deprecated_member_use
                       color: Theme.of(context).colorScheme.onBackground,
                     ),
               ),
@@ -93,12 +93,14 @@ class _FiltersScreenState extends ConsumerState<FiltersScreen> {
               title: Text(
                 'Lactose-free',
                 style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                      // ignore: deprecated_member_use
                       color: Theme.of(context).colorScheme.onBackground,
                     ),
               ),
               subtitle: Text(
                 'Only include lactose-free meals.',
                 style: Theme.of(context).textTheme.labelMedium!.copyWith(
+                      // ignore: deprecated_member_use
                       color: Theme.of(context).colorScheme.onBackground,
                     ),
               ),
@@ -115,12 +117,14 @@ class _FiltersScreenState extends ConsumerState<FiltersScreen> {
               title: Text(
                 'Vegetarian',
                 style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                      // ignore: deprecated_member_use
                       color: Theme.of(context).colorScheme.onBackground,
                     ),
               ),
               subtitle: Text(
                 'Only include vegetarian meals.',
                 style: Theme.of(context).textTheme.labelMedium!.copyWith(
+                      // ignore: deprecated_member_use
                       color: Theme.of(context).colorScheme.onBackground,
                     ),
               ),
@@ -137,12 +141,14 @@ class _FiltersScreenState extends ConsumerState<FiltersScreen> {
               title: Text(
                 'Vegan',
                 style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                      // ignore: deprecated_member_use
                       color: Theme.of(context).colorScheme.onBackground,
                     ),
               ),
               subtitle: Text(
                 'Only include vegan meals.',
                 style: Theme.of(context).textTheme.labelMedium!.copyWith(
+                      // ignore: deprecated_member_use
                       color: Theme.of(context).colorScheme.onBackground,
                     ),
               ),
