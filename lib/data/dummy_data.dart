@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:meals/models/category.dart';
 import 'package:meals/models/meal.dart';
 
@@ -23,7 +22,7 @@ const availableCategories = [
   Category(
     id: 'c4',
     title: 'German',
-    color: Colors.amber,
+    color: Color.fromARGB(255, 86, 248, 17),
   ),
   Category(
     id: 'c5',
@@ -33,17 +32,17 @@ const availableCategories = [
   Category(
     id: 'c6',
     title: 'Exotic',
-    color: Colors.green,
+    color: Color.fromARGB(255, 194, 40, 133),
   ),
   Category(
     id: 'c7',
     title: 'Breakfast',
-    color: Colors.lightBlue,
+    color: Colors.grey,
   ),
   Category(
     id: 'c8',
     title: 'Asian',
-    color: Colors.lightGreen,
+    color: Color.fromARGB(255, 192, 225, 70),
   ),
   Category(
     id: 'c9',

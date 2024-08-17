@@ -1,15 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:meals/screens/tabs.dart';
+//import 'package:meals/screens/tabs.dart';
+import 'package:meals/screens/startscreen.dart';
 
 final theme = ThemeData(
+  hoverColor: Colors.white,
+  appBarTheme: const AppBarTheme(
+      color: Color.fromARGB(255, 194, 40, 133),
+      shadowColor: Colors.white,
+      elevation: 5,
+      foregroundColor: Colors.white),
   useMaterial3: true,
   colorScheme: ColorScheme.fromSeed(
     brightness: Brightness.dark,
-    seedColor: const Color.fromARGB(255, 131, 57, 0),
+    seedColor: const Color.fromARGB(255, 194, 40, 133),
   ),
-  textTheme: GoogleFonts.latoTextTheme(),
+  fontFamily: GoogleFonts.robotoFlex().fontFamily,
 );
 
 void main() {
@@ -26,9 +33,9 @@ class App extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      theme: theme,
-      home: const TabsScreen(),
-    );
+        checkerboardOffscreenLayers: true,
+        debugShowCheckedModeBanner: false,
+        theme: theme,
+        home: const StartScreen());
   }
 }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-
 import 'package:meals/models/category.dart';
 
 class CategoryGridItem extends StatelessWidget {
@@ -21,6 +20,9 @@ class CategoryGridItem extends StatelessWidget {
       child: Container(
         padding: const EdgeInsets.all(16),
         decoration: BoxDecoration(
+            border: Border.all(
+              color: Colors.white,
+            ),
             borderRadius: BorderRadius.circular(16),
             gradient: LinearGradient(
               colors: [
@@ -30,12 +32,20 @@ class CategoryGridItem extends StatelessWidget {
               begin: Alignment.topLeft,
               end: Alignment.bottomRight,
             )),
-        child: Text(
-          category.title,
-          style: Theme.of(context).textTheme.titleLarge!.copyWith(
-                // ignore: deprecated_member_use
-                color: Theme.of(context).colorScheme.onBackground,
-              ),
+        child: Column(
+          children: [
+            const Icon(Icons.fastfood),
+            const SizedBox(
+              height: 20,
+            ),
+            Text(
+              category.title,
+              style: Theme.of(context).textTheme.titleLarge!.copyWith(
+                    // ignore: deprecated_member_use
+                    color: Theme.of(context).colorScheme.onBackground,
+                  ),
+            ),
+          ],
         ),
       ),
     );
