@@ -11,16 +11,12 @@ class StartScreen extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.center,
         crossAxisAlignment: CrossAxisAlignment.center,
         children: [
-          Container(
-            height: 400,
-            width: double.infinity,
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(15),
-              image: const DecorationImage(
-                image: AssetImage("assets/images/start.png"),
-                fit: BoxFit.cover,
-              ),
-            ),
+          const SizedBox(
+            height: 20,
+          ),
+          const CircleAvatar(
+            backgroundImage: AssetImage("assets/images/start.png"),
+            radius: 200,
           ),
           const SizedBox(height: 30),
           Text(
@@ -63,7 +59,8 @@ class PrettyFuzzyButton extends StatelessWidget {
   final String text;
   final VoidCallback onPressed;
 
-  const PrettyFuzzyButton({required this.text, required this.onPressed});
+  const PrettyFuzzyButton(
+      {super.key, required this.text, required this.onPressed});
 
   @override
   Widget build(BuildContext context) {

@@ -67,16 +67,28 @@ class _TabsScreenState extends ConsumerState<TabsScreen> {
       drawer: MainDrawer(
         onSelectScreen: _setScreen,
       ),
-      body: activePage,
+      body: Stack(
+        fit: StackFit.expand,
+        children: [
+          Image.asset(
+            "assets/images/start1.jpg",
+            fit: BoxFit.cover,
+          ),
+          activePage,
+        ],
+      ),
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: const Color.fromARGB(255, 194, 40, 133),
         onTap: _selectPage,
         currentIndex: _selectedPageIndex,
         items: const [
           BottomNavigationBarItem(
+            backgroundColor: Colors.white,
             icon: Icon(Icons.set_meal),
             label: 'Categories',
           ),
           BottomNavigationBarItem(
+            backgroundColor: Colors.white,
             icon: Icon(Icons.star),
             label: 'Favorites',
           ),
