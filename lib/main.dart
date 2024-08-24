@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 //import 'package:meals/screens/tabs.dart';
-import 'package:meals/screens/startscreen.dart';
+import 'package:meals/screens/intro_screen.dart';
 
 final theme = ThemeData(
   hoverColor: Colors.white,
@@ -36,6 +36,6 @@ class App extends StatelessWidget {
         checkerboardOffscreenLayers: true,
         debugShowCheckedModeBanner: false,
         theme: theme,
-        home: const StartScreen());
+        home: const IntroScreen());
   }
 }
